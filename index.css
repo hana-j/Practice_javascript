@@ -1,0 +1,12 @@
+body{
+    background-color: palevioletred;
+}
+h1{
+    color:wheat;
+}
+.form, .greetings{
+    display: none;
+}
+.showing{
+    display: block;
+}
