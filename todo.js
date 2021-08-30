@@ -3,7 +3,9 @@ const toDoForm = document.querySelector(".js-toDoForm"),
  toDoList = document.querySelector(".js-toDoList");
 
  const TODOS_LS ="toDos";
-
+ function deleteToDo(event){
+    console.log(event.target.parentNode);
+ }
  function saveToDos(){
      localStorage.setItem(TODOS_LS ,JSON.stringify(toDos));
  }
@@ -12,6 +14,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     delBtn.innerHTML="❌";
+    delBtn.addEventListener("click",deleteToDo);
     const span=document.createElement("span");
     const newId =  toDos.length+1;
     span.innerText=text;
@@ -48,3 +51,4 @@ const toDoForm = document.querySelector(".js-toDoForm"),
     
  }
  init();
+ 
