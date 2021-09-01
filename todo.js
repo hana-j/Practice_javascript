@@ -25,7 +25,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
  function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.innerHTML="❌";
+    delBtn.innerHTML="✔️ &nbsp";
     delBtn.addEventListener("click",deleteToDo);
     const span=document.createElement("span");
     const newId =  toDos.length+1;
