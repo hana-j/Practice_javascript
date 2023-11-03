@@ -46,3 +46,4 @@ function init(){
     loadCoords();
 }
 init();
+login 
